@@ -9,16 +9,13 @@
     body {
       margin: 0;
       font-family: Arial, sans-serif;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
+      background-color: #f9fafb;
       padding: 1.5rem;
       text-align: center;
-      background-color: #f9fafb;
     }
     .container {
       max-width: 800px;
+      margin: 0 auto;
     }
     h1 {
       font-size: 2.5rem;
@@ -42,6 +39,7 @@
       flex-wrap: wrap;
       justify-content: center;
       gap: 1rem;
+      margin-bottom: 3rem;
     }
     .btn {
       display: inline-flex;
@@ -59,6 +57,18 @@
     }
     .btn i {
       margin-right: 0.5rem;
+    }
+    section {
+      padding: 3rem 1rem;
+    }
+    section h2 {
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 1.5rem;
+    }
+    section h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
     }
   </style>
 </head>
@@ -81,6 +91,20 @@
       <a class="btn" href="https://github.com/yourusername" target="_blank"><i data-lucide="github"></i> GitHub</a>
       <a class="btn" href="https://www.linkedin.com/in/abhishek-daundkar-9370aa127/" target="_blank"><i data-lucide="linkedin"></i> LinkedIn</a>
     </div>
+
+    <section id="projects">
+      <h2>🚀 Research Project</h2>
+      <div style="text-align: left;">
+        <h3>CRUX: Crowd-sourced Data Engine for Unpublished X-ray Data</h3>
+        <p>
+          Contributed to the development of <a href="https://cruxproject.org" target="_blank" style="color: #1d4ed8; text-decoration: underline;">CRUX</a>,
+          a semantic web platform for ingesting, visualizing, and analyzing unpublished X-ray diffraction (XRD) data.
+          Developed ontology-based tools, implemented autoencoder pipelines for XRD pattern reconstruction, and helped integrate FAIR data principles.
+        </p>
+        <p><strong>Technologies:</strong> Python, TensorFlow, PyTorch, RDF/SPARQL, FAIR Data, Ontologies</p>
+        <p><strong>Role:</strong> Machine Learning Scientist (PhD Researcher)</p>
+      </div>
+    </section>
   </div>
 
   <script src="https://unpkg.com/lucide@latest"></script>
@@ -88,19 +112,4 @@
     lucide.createIcons();
   </script>
 </body>
-  <section id="projects" style="padding: 3rem 1rem; text-align: center;">
-  <h2 style="font-size: 2rem; font-weight: bold; margin-bottom: 1.5rem;">
-    🚀 Research Project
-  </h2>
-  <div style="max-width: 800px; margin: 0 auto; text-align: left;">
-    <h3 style="font-size: 1.5rem; font-weight: 600;">CRUX: Crowd-sourced Data Engine for Unpublished X-ray Data</h3>
-    <p style="margin: 0.5rem 0;">
-      Contributed to the development of <a href="https://cruxproject.org" target="_blank" style="color: #1d4ed8; text-decoration: underline;">CRUX</a>, a semantic web platform for ingesting, visualizing, and analyzing unpublished X-ray diffraction (XRD) data.
-      Developed ontology-based tools, implemented autoencoder pipelines for XRD pattern reconstruction, and helped integrate FAIR data principles.
-    </p>
-    <p><strong>Technologies:</strong> Python, TensorFlow, PyTorch, RDF/SPARQL, FAIR Data, Ontologies</p>
-    <p><strong>Role:</strong> Machine Learning Scientist (PhD Researcher)</p>
-  </div>
-</section>
-
 </html>
